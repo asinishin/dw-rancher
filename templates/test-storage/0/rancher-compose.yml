@@ -1,9 +1,5 @@
 version: '2'
 services:
-  nfs-driver:
-    storage_driver:
-      name: rancher-nfs
-      scope: environment
-      volumeAccessMode: multiHostRW
+  test:
+    scale: 2
     start_on_create: true
-

@@ -1,8 +1,0 @@
-name: DW Nginx
-description: >
-  DW front-end provisioin.
-version: 0.0.1
-category: Networking
-maintainer: Alex Sinishin
-license: MIT
-projectURL: https://github.com/asinishin/dw-rancher

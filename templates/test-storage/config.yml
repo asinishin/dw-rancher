@@ -1,7 +1,6 @@
 name: DW Test Storage
-description: >
-  DW shared test storage.
 version: 0.0.1
+description: DW shared test storage.
 category: Networking
 maintainer: Alex Sinishin
 license: Apache2
