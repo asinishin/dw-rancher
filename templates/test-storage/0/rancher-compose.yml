@@ -9,7 +9,7 @@ version: '2'
        description: "Number of NFS client containers to scale up"
        label: "NFS clients scale"
        required: true
-       type: "string"
+       type: "int"
 
 services:
   test:
