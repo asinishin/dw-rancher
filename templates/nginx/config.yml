@@ -1,7 +1,7 @@
 name: DW Nginx
-description: |
+description: >
   DW front-end provisioin.
-version: 1
+version: 0.0.1
 category: Networking
 maintainer: Alex Sinishin
 license: MIT

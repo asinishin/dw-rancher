@@ -1,8 +1,8 @@
-name: DW Nginx
-description: |
-  DW front-end provisioin.
-version: 1
+name: DW Test Storage
+description: >
+  DW shared test storage.
+version: 0.0.1
 category: Networking
 maintainer: Alex Sinishin
-license: MIT
+license: Apache2
 projectURL: https://github.com/asinishin/dw-rancher
