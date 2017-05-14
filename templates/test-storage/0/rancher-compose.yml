@@ -7,7 +7,7 @@ version: '2'
      - variable: "CLIENT_SCALE"
        default: 1
        description: "Number of NFS client containers to scale up"
-       label: "NFS client scale"
+       label: "NFS clients scale"
        required: true
        type: "string"
 
