@@ -1,0 +1,20 @@
+version: '2'
+volumes:
+  dw-front-end:
+    external: true
+    driver: rancher-nfs
+services:
+  dw-front-end:
+    image: nginx
+    volumes:
+    - dw-front-end:/etc/nginx:ro
+    labels:
+      io.rancher.container.pull_image: always
+  front-end:
+    image: rancher/lb-service-haproxy:v0.6.4
+    ports:
+    - 80:80/tcp
+    labels:
+      io.rancher.scheduler.affinity:host_label: front-end=true
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
