@@ -1,3 +1,8 @@
+.catalog:
+    name: "DW Test Storage"
+    version: "v0.0.1"
+    description: "DW Shared Storage"
+
 services:
   test:
     scale: 2
