@@ -3,8 +3,15 @@ version: '2'
     name: "DW Test Storage"
     version: "v0.0.1"
     description: "DW Shared Storage"
+    questions:
+     - variable: "CLIENT_SCALE"
+       description: "Number of NFS clients to scale up"
+       label: "NFS Clients"
+       required: true
+       type: "string"
+
 
 services:
   test:
-    scale: 2
+    scale: "${CLIENT_SCALE}"
     start_on_create: true
