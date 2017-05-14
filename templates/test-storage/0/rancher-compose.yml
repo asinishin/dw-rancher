@@ -5,11 +5,11 @@ version: '2'
     description: "DW Shared Storage"
     questions:
      - variable: "CLIENT_SCALE"
-       description: "Number of NFS clients to scale up"
-       label: "NFS Clients"
+       default: 1
+       description: "Number of NFS client containers to scale up"
+       label: "NFS client scale"
        required: true
        type: "string"
-
 
 services:
   test:
