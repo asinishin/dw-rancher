@@ -1,0 +1,39 @@
+version: '2'
+.catalog:
+    name: "DW Premium"
+    version: "v0.0.1"
+    description: "Satellite DeskWorks premium application"
+    questions:
+     - variable: "APP_NAME"
+       description: "Application site URL will consist the <application-name> as http://<app-name>.some_site.com"
+       label: "Application name"
+       required: true
+       type: "string"
+     - variable: "APP_DOMAIN"
+       default: "rubyground.com"
+       description: "Application site URL will consist the <domain-name> as http://some_app.<domain-name>"
+       label: "Domain name"
+       required: true
+       type: "string"
+     - variable: "DB_HOST"
+       default: "galera-galera-lb-1"
+       description: "Host name for MySQL database"
+       label: "DB host"
+       required: true
+       type: "string"
+     - variable: "DB_USER"
+       default: "root"
+       description: "Login for MySQL database"
+       label: "DB user"
+       required: true
+       type: "string"
+     - variable: "DB_PASSWORD"
+       description: "Password for MySQL database"
+       label: "DB password"
+       required: true
+       type: "password"
+
+services:
+  dw-server:
+    scale: 1
+    start_on_create: true

@@ -1,0 +1,7 @@
+name: DW Premium
+version: 0.0.1
+description: DW premium application server.
+category: Application
+maintainer: Alex Sinishin
+license: All rights reserved
+projectURL: https://github.com/asinishin/dw-rancher-catalog

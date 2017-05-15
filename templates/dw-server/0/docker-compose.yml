@@ -1,0 +1,13 @@
+version: '2'
+services:
+  dw-server:
+    image: asinishin/dw-server
+    environment:
+      RAILS_ENV: production
+      APP_NAME: '${APP_NAME}'
+      APP_DOMAIN: '${APP_DOMAIN}'
+      DB_HOST: '${DB_HOST}'
+      DB_USER: '${DB_USER}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+    labels:
+      io.rancher.container.pull_image: always
