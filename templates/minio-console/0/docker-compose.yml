@@ -1,7 +1,6 @@
 version: '2'
 volumes:
   minio-volume:
-    external: true
     driver: minio/minfs
     driver_opts:
       endpoint: https://minio.satellitedeskworks.com
