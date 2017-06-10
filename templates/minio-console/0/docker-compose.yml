@@ -1,0 +1,20 @@
+version: '2'
+volumes:
+  minio-volume:
+    external: true
+    driver: minio/minfs
+    driver_opts:
+      endpoint: https://minio.satellitedeskworks.com
+      access-key: "#{ACCESS_KEY}" 
+      secret-key: "#{SECRET_KEY}"
+      bucket: "#{BUCKET}"
+      opts: cache=/tmp/minio-volume-cache
+services:
+  minio-console:
+    image: ubuntu:14.04.3
+    stdin_open: true
+    volumes:
+    - minio-volume:/data
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always

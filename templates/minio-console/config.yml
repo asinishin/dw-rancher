@@ -1,0 +1,7 @@
+name: Minio Console
+version: 0.0.1
+description: Console with Minio mounted volume
+category: Networking
+maintainer: Alex Sinishin
+license: Apache2
+projectURL: https://github.com/asinishin/dw-rancher-catalog

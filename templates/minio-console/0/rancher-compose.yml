@@ -1,0 +1,26 @@
+version: '2'
+.catalog:
+    name: "Minio console"
+    version: "v0.0.1"
+    description: "Console with Minio mounted volume"
+    questions:
+     - variable: "ACCESS_KEY"
+       description: "Minio access key"
+       label: "Access key"
+       required: true
+       type: "string"
+     - variable: "SECRET_KEY"
+       description: "Minio secret key"
+       label: "Secret key"
+       required: true
+       type: "string"
+     - variable: "BUCKET"
+       description: "Minio bucket name"
+       label: "Bucket"
+       required: true
+       type: "string"
+
+services:
+  minio-console:
+    scale: 1
+    start_on_create: true
